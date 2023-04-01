@@ -41,7 +41,8 @@ form div input{
     border-radius: var(--default-radius);
     border: 1px solid var(--lightGray);
     margin: 10px 0;
-    transition: var(--delay-normal)
+    transition: var(--delay-normal);
+    width: 100%;
 }
 
 form div input:focus{
