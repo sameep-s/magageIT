@@ -9,7 +9,14 @@ export function Dashboard() {
     const [addProject, setAddProject] = useState(false);
 
     useEffect(() => {
-        setDataProjects([...projects])
+        let dataLocal = localStorage.getItem('dataProjects');
+        if (!dataLocal) {
+            setDataProjects([...projects]);
+            localStorage.setItem('dataProjects', JSON.stringify(projects));
+        } else {
+            dataLocal = JSON.parse(dataLocal);
+            setDataProjects([...dataLocal]);
+        }
     }, []);
 
 
@@ -29,11 +36,13 @@ export function Dashboard() {
                     </div>
 
                     <div className="container__cards__project">
-                        {paginationData?.map((project) => <ProjectCard
-                            key={project._id}
-                            title={project.title}
-                            desc={project.desc}
-                        />
+                        {paginationData?.map((project) =>
+                            <ProjectCard
+                                key={project._id}
+                                title={project.title}
+                                desc={project.desc}
+                                project={project}
+                            />
                         )}
                     </div>
 

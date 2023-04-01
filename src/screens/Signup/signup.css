@@ -1,0 +1,82 @@
+.wrapper__main__signup{
+    margin-top: 4rem;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__main__signup{
+    background-color: red;
+    padding: 3rem 0rem;
+    background-color: white;
+    border-radius: 2rem;
+    font-size: 3rem;
+    width: 35rem;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--lightGray);
+}
+
+form .form__title{
+    font-family: var(--font-heading);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid var(--lightGray);
+    margin-bottom: 10px;
+}
+
+form div input{
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    outline: 1px solid transparent;
+    border-radius: var(--default-radius);
+    border: 1px solid var(--lightGray);
+    margin: 10px 0;
+    transition: var(--delay-normal)
+}
+
+form div input:focus{
+    outline: 1px solid var(--primary);
+    border: 1px solid transparent;
+}
+
+form div button{
+    background-color: var(--primary);
+    color: white;
+    font-family: var(--font-heading);
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: var(--default-radius);
+
+}
+
+.password{
+    position: relative;
+}
+
+.password .passwordToggle{
+    right: 10px;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+}
+
+.classEndPara{
+    font-size: 2rem;
+}
+
+.classEndPara span{
+    color: var(--primary);
+    cursor: pointer;
+}

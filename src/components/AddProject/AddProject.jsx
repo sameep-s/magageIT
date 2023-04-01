@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './addProject.css';
 import { toast } from 'react-hot-toast';
+import { handleProjectFormSubmit } from '../../utils/functions';
 
 export function AddProject(props) {
     const { setAddProject, setDataProjects } = props;
@@ -10,20 +11,9 @@ export function AddProject(props) {
         _id: Date.now() + Math.random() * 10,
         boards: []
     });
-
     const addProjectRef = useRef();
 
-    function handleProjectFormSubmit() {
 
-        if (project.title === "") {
-            toast.error("Please add title");
-            return;
-        }
-        setProject({ title: "", desc: "" });
-        toast.success("New Project Created");
-        setAddProject(false);
-        setDataProjects(prev => [project, ...prev]);
-    }
 
     useEffect(() => {
         let handler = (e) => {
@@ -42,7 +32,7 @@ export function AddProject(props) {
             <div className="container__main__addProject" ref={addProjectRef}>
                 <form onSubmit={(e) => {
                     e.preventDefault();
-                    handleProjectFormSubmit()
+                    handleProjectFormSubmit(project, setProject, setAddProject, setDataProjects)
                 }}>
                     <div className="projectTitle">
                         <input

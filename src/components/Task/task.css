@@ -37,7 +37,7 @@
 
 }
 
-.container__task__Title:hover .task__options{
+.container__main__task:hover .task__options{
     display: flex;
     align-items: center;
 }

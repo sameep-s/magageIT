@@ -5,6 +5,8 @@ import { AddProject } from "./AddProject/AddProject";
 import { Board } from "./Board/Board";
 import { Task } from "./Task/Task";
 import { Editable } from "./Editable/Editable";
+import { TaskPopUp } from "./TaskPopUp/TaskPopUp";
+import { RequireAuth } from "./PrivateRoute/requireAuth";
 
 export {
     Navbar,
@@ -13,5 +15,7 @@ export {
     AddProject,
     Board,
     Task,
-    Editable
+    Editable,
+    TaskPopUp,
+    RequireAuth
 }

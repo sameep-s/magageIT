@@ -1,12 +1,11 @@
 
 .container__board{
-    width: 35rem;
+    min-width: 35rem;
     padding: 1rem 1rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5px;
 }
 
 .board__title{
@@ -42,5 +41,4 @@
 .container__board .container__main__boardTasks{
     overflow-y: scroll;
     width: 100%;
-
 }

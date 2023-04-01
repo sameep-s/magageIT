@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import './editable.css';
+import { handleEditableFormSubmit } from '../../utils/functions';
 
 export function Editable(props) {
     const [isEditable, setIsEditable] = useState(false);
+    const [title, setTitle] = useState("");
     const refEditable = useRef();
-    const { Text } = props;
+    const { Text, onSubmit } = props;
 
     useEffect(() => {
         const handler = (e) => {
@@ -18,21 +20,25 @@ export function Editable(props) {
 
     return (
         <>
-            <div className="container__main__editable">
+            <div className="container__main__editable" ref={refEditable}>
                 {
                     isEditable ?
                         <div className="editable__form__addtask">
-                            <form onSubmit={(e) => {
-                                e.preventDefault()
-                            }}>
+                            <form onSubmit={(e) => handleEditableFormSubmit(e, title, onSubmit, setTitle, setIsEditable)}>
                                 <input
                                     type="text"
                                     className='editable__inputFiled'
                                     autoFocus
+                                    value={title}
+                                    onChange={e => setTitle(e.target.value)}
                                     placeholder='Enter Title'
                                 />
                                 <div className="editable__form__actions">
-                                    <button className="editableAddButton">Add</button>
+                                    <button
+                                        type="submit"
+                                        className="editableAddButton">
+                                        Add
+                                    </button>
                                 </div>
                             </form>
                         </div>
