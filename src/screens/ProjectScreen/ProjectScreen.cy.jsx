@@ -7,3 +7,4 @@ describe('<ProjectScreen />', () => {
     cy.mount(<ProjectScreen />)
   })
 })
+

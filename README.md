@@ -52,10 +52,3 @@ To run this app locally, you must must clone this repo using ```git clone https:
 <ul>
 <li>Added Tests</li>
 </ul>
-
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
