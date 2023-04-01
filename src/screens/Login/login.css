@@ -20,6 +20,11 @@
     border: 1px solid var(--lightGray);
 }
 
+.container__inner{
+    width: 70%;
+}
+
+
 form .form__title{
     font-family: var(--font-heading);
     display: flex;
