@@ -20,6 +20,11 @@
     border: 1px solid var(--lightGray);
 }
 
+.container__inner{
+    width: 70%;
+}
+
+
 form .form__title{
     font-family: var(--font-heading);
     display: flex;
@@ -36,7 +41,8 @@ form div input{
     border-radius: var(--default-radius);
     border: 1px solid var(--lightGray);
     margin: 10px 0;
-    transition: var(--delay-normal)
+    transition: var(--delay-normal);
+    width: 100%;
 }
 
 form div input:focus{
