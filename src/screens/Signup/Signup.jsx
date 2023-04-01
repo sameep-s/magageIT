@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar } from "../../components";
 import { Eye, EyeOff } from "react-feather";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./signup.css";
 import { handleSignup } from "../../utils/functions";
 
@@ -16,6 +16,18 @@ export function Signup() {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [signupData, setSignupData] = useState(defaultData);
 
+    const location = useLocation();
+    const navigate = useNavigate();
+    let user = localStorage.getItem('user') || "";
+
+
+    useEffect(() => {
+
+        if (user) {
+            navigate(location?.state?.from || '/', { replace: true });
+        }
+
+    }, [user]);
 
     return (
         <>
