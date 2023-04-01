@@ -1,0 +1,47 @@
+.container__main__addProject{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid var(--lightGray);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    width: 35rem;
+}
+
+.projectTitle input{
+    font-size: 2rem;
+    padding: .5rem;
+    border: 1px solid var(--darkGray);
+    outline: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.projectDesc textarea{
+    padding: .5rem;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    font-size: 2rem;
+}
+
+.container__action{
+    display: flex;
+
+}
+
+.container__action button{
+    margin-left: auto;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container__action button:active{
+    background-color: var(--darkPrimary);
+}

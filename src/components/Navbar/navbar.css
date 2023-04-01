@@ -1,0 +1,15 @@
+.container__main__nav{
+    background-color: var(--primary);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container__main__nav > span{
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: white;
+    cursor: pointer;
+    font-family: var(--font-logo);
+}

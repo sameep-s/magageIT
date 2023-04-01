@@ -1,0 +1,46 @@
+
+.container__board{
+    width: 35rem;
+    padding: 1rem 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.board__title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px 1rem;
+}
+
+.board__title span{
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    padding-bottom: 5px;
+}
+
+.board__title .tasksCount{
+    margin-left: 10px;
+    color: var(--darkGray);
+}
+
+.board__title .boardOptions{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+    transition: var(--delay-normal);
+}
+
+.board__title:hover .boardOptions{
+    display: flex;
+    align-items: center;
+}
+
+.container__board .container__main__boardTasks{
+    overflow-y: scroll;
+    width: 100%;
+
+}

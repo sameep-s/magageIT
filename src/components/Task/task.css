@@ -1,0 +1,63 @@
+.container__main__task{
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+.container__task__image{
+    width: 100%;
+}
+.container__main__task .container__task__image img{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+    object-fit: cover;
+}
+
+
+.container__main__task .container__task__Title{
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    display: flex;
+    align-items: center;
+}
+.container__task__Title .task__title__icon{
+    font-size: 1rem;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container__task__Title .task__options{
+    margin-left: auto;
+    display: none;
+    transition: var(--delay-normal);
+
+}
+
+.container__task__Title:hover .task__options{
+    display: flex;
+    align-items: center;
+}
+
+.task__desc{
+    font-size: 1.5rem;
+    color: var(--darkGray);
+}
+
+.task__info,
+.task__due_date,
+.task__assignee{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.task__info{
+    margin: 10px 0;
+}
+.task__due_date{
+    margin-left: auto;
+}

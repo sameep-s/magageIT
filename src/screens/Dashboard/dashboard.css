@@ -1,0 +1,49 @@
+.container__main__dashboard{
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+}
+
+.container__dashboard__inner{
+    width:80rem;
+    padding: 1.5rem;
+    border-left: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+}
+
+.title__dashboard{
+    font-size: 3rem;
+    border-bottom: 1px solid gray;
+    font-family: var(--font-heading);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container__cards__project{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contianer__pagination{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.title__dashboard span{
+    margin-left: auto;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    z-index: 2;
+}
+

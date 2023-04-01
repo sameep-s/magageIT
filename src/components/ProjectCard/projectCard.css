@@ -1,0 +1,33 @@
+.container__main__projectCard{
+    width: 30rem;
+    border-radius: 2rem;
+    border: 1px solid var(--lightGray);
+    cursor: pointer;
+    transition: var(--delay-normal);
+}
+
+.container__main__projectCard:hover{
+    transform: scale(1.02);
+}
+
+.project__cover__image{
+    width: 100%;
+}
+
+.project__cover__image > img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.project__title{
+    font-family: var(--font-heading);
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.project__desc{
+    color: var(--darkGray);
+    font-size: 2rem;
+    padding: 1rem;
+}

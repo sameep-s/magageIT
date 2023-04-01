@@ -1,0 +1,44 @@
+.container__main__editable{
+    width: 100%;
+}
+
+.container__editable__action{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--lightGray);
+    border-radius: .5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    margin: 5px 0;
+}
+
+.editable__form__addtask{
+    width: 100%;
+    /* background-color: white; */
+    margin: 5px 0;
+}
+
+.editable__form__addtask .editable__inputFiled{
+    outline: none;
+    padding: .2rem 1rem;
+    border: 1px solid var(--lightGray);
+    font-size: 1.8rem;
+    width: 100%;
+    border-radius: var(--default-radius);
+}
+
+.editable__form__actions button{
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    border-radius: var(--default-radius);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0;
+}
