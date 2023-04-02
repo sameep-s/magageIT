@@ -13,6 +13,8 @@ To run this app locally, you must must clone this repo using ```git clone https:
 
 # Features
 
+# Note: Drag card on target card to see drag functionlity
+
 # Login/Signup
 <ul>
 <li>Login using local storage</li>
