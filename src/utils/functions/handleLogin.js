@@ -2,7 +2,10 @@ import { toast } from "react-hot-toast";
 
 export function handleLogin(e, loginData, setLoginData, defaultData) {
     e.preventDefault();
-    if (loginData.uname === "") toast.error("Username Cannot be empty");
+    if (loginData.uname === "") {
+        toast.error("Username Cannot be empty")
+        return
+    };
     let creds = localStorage.getItem('credentials');
     if (!creds) {
         toast.error('User Does not exist');

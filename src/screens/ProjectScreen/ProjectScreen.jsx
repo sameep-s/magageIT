@@ -23,7 +23,7 @@ export function ProjectScreen() {
     useEffect(() => {
         let data = localStorage.getItem("dataProjects") || [];
         data = JSON.parse(data);
-        const project = data.find((i) => +i._id === +projectID);
+        const project = data.find((i) => +i._id === +projectID) || {};
         setDataProject({ ...project });
         setBoards([...project.boards])
     }, [])

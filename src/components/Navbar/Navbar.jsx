@@ -4,7 +4,7 @@ export function Navbar() {
     return (
         <>
             <div className="container__main__nav">
-                <span>Crello</span>
+                <span className='nav__logo'>Crello</span>
             </div>
         </>
     )

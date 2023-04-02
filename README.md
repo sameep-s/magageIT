@@ -49,6 +49,12 @@ To run this app locally, you must must clone this repo using ```git clone https:
 </ul>
 
 # Test Cases
+```npx cypress open```
 <ul>
 <li>Added Tests</li>
+<li>tests if the Editbale component closes when clicked outside</li>
+<li>tests if popup opens up</li>
+<li>tests if popup closes when clicke on Close button</li>
+<li>tests if the Editbale component opens</li>
+<li></li>
 </ul>

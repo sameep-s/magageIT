@@ -74,7 +74,7 @@ export function Board(props) {
             <div className="container__board">
                 <div className="board__title">
                     <span>{board.title}</span>
-                    <span className='tasksCount'>{board.cards.length}</span>
+                    <span className='tasksCount'>{board?.cards?.length}</span>
                     <span className="boardOptions"><MoreHorizontal /></span>
                 </div>
 

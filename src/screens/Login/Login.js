@@ -32,12 +32,16 @@ export function Login() {
             <div className="wrapper__main__login">
                 <div className="container__main__login">
                     <div className="container__inner">
-                        <form onSubmit={(e) => handleLogin(e, loginData, setLoginData, defaultData)}>
+                        <form
+                            onSubmit={(e) => handleLogin(e, loginData, setLoginData, defaultData)}
+                            className="form__login"
+                        >
                             <div className="form__title">login</div>
                             <div className="">
                                 <input
                                     value={loginData.uname}
                                     type="text"
+                                    className="userName"
                                     onChange={(e) => setLoginData({ ...loginData, uname: e.target.value })}
                                     placeholder="Enter Username"
                                 />
@@ -47,6 +51,7 @@ export function Login() {
                                     value={loginData.password}
                                     type={passwordVisible ? "text" : "password"}
                                     placeholder="Enter password"
+                                    className="input__password"
                                     onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
                                 />
                                 <span className="passwordToggle" onClick={() => setPasswordVisible(prev => !prev)}>{!passwordVisible ? <EyeOff /> : <Eye />}</span>

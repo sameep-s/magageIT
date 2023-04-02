@@ -24,7 +24,10 @@ export function Editable(props) {
                 {
                     isEditable ?
                         <div className="editable__form__addtask">
-                            <form onSubmit={(e) => handleEditableFormSubmit(e, title, onSubmit, setTitle, setIsEditable)}>
+                            <form
+                                onSubmit={(e) => handleEditableFormSubmit(e, title, onSubmit, setTitle, setIsEditable)}
+                                className={Text === "Add Task+" ? "form__task" : "form__board"}
+                            >
                                 <input
                                     type="text"
                                     className='editable__inputFiled'
@@ -46,6 +49,7 @@ export function Editable(props) {
                         <div
                             className="container__editable__action"
                             onClick={() => setIsEditable(true)}
+                            data-cy={Text === "Add Task+" ? "container__editable__task" : "container__editable__List"}
                         >
                             {Text}
                         </div>
