@@ -5,7 +5,7 @@ Crello - Clone Trello
 <ul>
 <li>React Feather -> For Icons</li>
 <li>react-router-dom -> For Navigation</li>
-<li>react-hot-toasr -> For Notifications</li>
+<li>react-hot-toast -> For Notifications</li>
 </ul>
 
 # How to run
