@@ -1,5 +1,5 @@
-# Crello
-Crello - Clone Trello
+# ManageIt
+
 
 # Libraries Used
 <ul>
